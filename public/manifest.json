@@ -1,0 +1,16 @@
+{
+  "short_name": "TaskFocus",
+  "name": "Task & Focus Hub",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0F172A",
+  "theme_color": "#6366F1",
+  "display": "standalone",
+  "orientation": "portrait"
+}

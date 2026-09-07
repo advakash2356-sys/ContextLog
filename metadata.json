@@ -1,0 +1,6 @@
+{
+  "name": "Task & Focus Hub",
+  "description": "A modern, elegant task and focus productivity manager with category filtering, progress tracking, and Material 3 design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

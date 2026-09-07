@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Task &amp; Focus Hub</string>
+    <string name="app_subtitle">Stay organized and productive</string>
+    
+    <!-- Navigation & Headers -->
+    <string name="title_tasks">My Tasks</string>
+    <string name="title_progress">Daily Progress</string>
+    <string name="title_add_task">New Task</string>
+    
+    <!-- Actions -->
+    <string name="action_add">Add Task</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_search">Search tasks…</string>
+    <string name="action_clear_search">Clear search</string>
+    <string name="action_filter_all">All</string>
+    <string name="action_filter_work">Work</string>
+    <string name="action_filter_personal">Personal</string>
+    <string name="action_filter_study">Study</string>
+    <string name="action_filter_health">Health</string>
+    
+    <!-- Priority Levels -->
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+    
+    <!-- Input Fields -->
+    <string name="field_task_title">Task Title</string>
+    <string name="field_task_title_hint">e.g., Review project proposal</string>
+    <string name="field_task_desc">Description (optional)</string>
+    <string name="field_task_desc_hint">Add details or subtasks…</string>
+    <string name="field_category">Category</string>
+    <string name="field_priority">Priority</string>
+    <string name="error_empty_title">Please enter a task title</string>
+    
+    <!-- Stats & Progress -->
+    <string name="stat_completed">Completed</string>
+    <string name="stat_pending">Pending</string>
+    <string name="stat_total">Total</string>
+    <string name="stat_completion_rate">Completion Rate</string>
+    
+    <!-- Empty State -->
+    <string name="empty_tasks_title">No tasks found</string>
+    <string name="empty_tasks_desc">Tap the + button to create a new task and stay focused on what matters.</string>
+    <string name="empty_search_desc">No tasks match your current search query or filter.</string>
+    
+    <!-- Content Descriptions for Accessibility -->
+    <string name="cd_add_task">Add a new task</string>
+    <string name="cd_delete_task">Delete task</string>
+    <string name="cd_task_checkbox">Toggle task completion status</string>
+    <string name="cd_filter_chip">Filter category</string>
+    <string name="cd_priority_badge">Priority indicator</string>
+    <string name="cd_search_icon">Search icon</string>
+    <string name="cd_clear_search_icon">Clear search input</string>
+</resources>
+
