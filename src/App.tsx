@@ -345,9 +345,13 @@ export function App() {
 
   const handleToggleAmbient = useCallback((soundscape?: 'rain' | 'forest' | 'cafe') => {
     setAmbientSound((prev) => {
-      const next = !prev;
+      // If a specific soundscape is provided and sound was already on, 
+      // we are switching, not toggling off.
+      const isSwitching = soundscape && prev;
+      const next = isSwitching ? true : !prev;
+      
       if (isRunning) {
-        soundManager.toggleAmbientSound(next, soundscape);
+        soundManager.toggleAmbientSound(next, soundscape || 'rain');
       }
       return next;
     });

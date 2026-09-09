@@ -183,27 +183,23 @@ class SoundManager {
       const ctx = this.getContext();
       if (!ctx) return;
 
-      if (!enable) {
+      // Stop existing sound if playing or if we are disabling
+      if (this.isAmbientPlaying) {
         if (this.ambientOsc && this.ambientGain) {
           const now = ctx.currentTime;
           this.ambientGain.gain.linearRampToValueAtTime(0.001, now + 0.3);
+          const oldOsc = this.ambientOsc;
           setTimeout(() => {
-            if (this.ambientOsc) {
-              this.ambientOsc.stop();
-              this.ambientOsc.disconnect();
-              this.ambientOsc = null;
-            }
-            this.isAmbientPlaying = false;
+            oldOsc.stop();
+            oldOsc.disconnect();
           }, 350);
         }
-        return;
+        this.ambientOsc = null;
+        this.ambientGain = null;
+        this.isAmbientPlaying = false;
       }
 
-      if (this.isAmbientPlaying) {
-          // If already playing, just switch if needed. 
-          // For simplicity in this demo, just stop and restart.
-          this.toggleAmbientSound(false);
-      }
+      if (!enable) return;
 
       const now = ctx.currentTime;
       const osc = ctx.createOscillator();
