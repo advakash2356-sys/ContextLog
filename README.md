@@ -1,6 +1,6 @@
 # ContextLog
 
-ContextLog is a task management and focus session application with insights tracking.
+ContextLog (app name in code: "Task & Focus Hub") is a task management and focus session application with insights tracking.
 
 ## Features
 
